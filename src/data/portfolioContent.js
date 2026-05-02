@@ -16,7 +16,7 @@ export const portfolioContent = {
   vi: {
     metaTitle: "Nguyễn Thị Huỳnh Chăm | F&B",
     metaDescription:
-      "Nguyễn Thị Huỳnh Chăm - hồ sơ F&B cho vị trí phục vụ, barista, và chăm sóc khách hàng tại TP.HCM.",
+      "Nguyễn Thị Huỳnh Chăm - portfolio F&B cho vị trí phục vụ, barista, và chăm sóc khách hàng tại TP.HCM.",
     navLabel: "Điều hướng chính",
     homeLabel: "Trang chủ hồ sơ Nguyễn Thị Huỳnh Chăm",
     nav: {
@@ -28,30 +28,30 @@ export const portfolioContent = {
     hero: {
       eyebrow: "Nhân viên F&B",
       lede:
-        "Em đã làm ở quán cà phê, tiệm bánh và nhà hàng BBQ. Em quen với việc phục vụ khách, chuẩn bị món, và hỗ trợ đồng đội trong giờ đông.",
-      actionsLabel: "Hành động hồ sơ",
+        "Đã làm việc tại quán cà phê, tiệm bánh và nhà hàng BBQ. Quen với việc phục vụ khách, chuẩn bị món, và hỗ trợ đồng đội trong ca làm việc.",
+      actionsLabel: "Hành động portfolio",
       call: "Liên hệ",
       cv: "CV PDF",
-      alt: "Nguyễn Thị Huỳnh Chăm đang cầm ly đồ uống xanh trong không gian quán cà phê",
+      alt: "Nguyễn Thị Huỳnh Chăm",
       caption: "Năng lượng tích cực, phục vụ tốt, học việc nhanh.",
     },
     profile: {
       eyebrow: "Giới thiệu",
       heading: "Mang lại trải nghiệm tốt nhất cho khách hàng",
       body:
-        "Em là người thân thiện, chịu khó và có trách nhiệm. Khi làm việc, em cố gắng quan sát khách cần gì, làm đúng phần việc của mình và phối hợp với mọi người để ca làm diễn ra suôn sẻ.",
+        "Thân thiện, chịu khó và có trách nhiệm. Khi làm việc, ghi nhớ cố gắng quan sát khách cần gì, làm đúng phần việc của mình và phối hợp với mọi người để ca làm việc diễn ra suôn sẻ.",
     },
     capability: {
-      eyebrow: "Cách em làm việc",
-      heading: "Điểm mạnh và kỹ năng phục vụ",
+      eyebrow: "Cách làm việc",
+      heading: "Điểm mạnh và kỹ năng",
       strengthsHeading: "Điểm mạnh",
       valueHeading: "Trong ca làm",
       value:
-        "Em luôn cố gắng giữ thái độ dễ chịu với khách, làm món gọn gàng, để ý bàn ghế và hỗ trợ đồng đội khi quán đông.",
+        "Luôn cố gắng giữ thái độ dễ chịu với khách, chế biến món gọn gàng, để ý bàn ghế và hỗ trợ đồng đội.",
       skillsHeading: "Kỹ năng",
     },
     strengths: [
-      "Thân thiện và hòa đồng",
+      "Thân thiện, hòa đồng",
       "Học hỏi nhanh",
       "Chăm chỉ",
       "Có trách nhiệm",
@@ -83,7 +83,7 @@ export const portfolioContent = {
         icon: "coffee",
         accent: "green",
         summary:
-          "Em thực hiện pha chế món, đón khách, giữ khu vực làm việc gọn gàng và hỗ trợ đồng đội trong lúc phục vụ.",
+          "Thực hiện pha chế món, đón khách, giữ khu vực làm việc gọn gàng và hỗ trợ đồng đội trong lúc phục vụ.",
         proof: "Pha chế, đón khách, giữ quầy gọn gàng",
       },
       {
@@ -93,7 +93,7 @@ export const portfolioContent = {
         icon: "cake",
         accent: "rose",
         summary:
-          "Em chuẩn bị crepes, waffles và các đơn tráng miệng, chú ý phần trình bày và xử lý đơn cho khách tại quầy.",
+          "Chuẩn bị đơn tráng miệng, chú ý phần trình bày và xử lý đơn cho khách tại quầy.",
         proof: "Chuẩn bị món, ra đơn, trình bày sản phẩm",
       },
       {
@@ -103,7 +103,7 @@ export const portfolioContent = {
         icon: "flame",
         accent: "gold",
         summary:
-          "Em phục vụ đồ ăn, đồ uống, hỗ trợ khách chọn món và trải nghiệm nướng, đồng thời giữ bàn ăn sạch trong suốt ca.",
+          "Phục vụ món nướng, hỗ trợ khách chọn món và trải nghiệm nướng, đồng thời giữ bàn ăn sạch trong suốt ca.",
         proof: "Phục vụ bàn, hỗ trợ khách, phối hợp bếp",
       },
       {
@@ -113,15 +113,15 @@ export const portfolioContent = {
         icon: "users",
         accent: "ink",
         summary:
-          "Em tiếp nhận thắc mắc của khách, hỗ trợ xử lý phản hồi, ghi nhận ý kiến và phụ giúp nhân viên phục vụ khi cần.",
+          "Tiếp nhận thắc mắc của khách, hỗ trợ xử lý phản hồi, ghi nhận ý kiến và hỗ trợ nhân viên phục vụ khi cần.",
         proof: "Chăm sóc khách, ghi nhận phản hồi, hỗ trợ vận hành",
       },
     ],
     venuesIntro: {
-      eyebrow: "Nơi em từng làm",
-      heading: "Một vài môi trường F&B em đã trải qua",
+      eyebrow: "Môi trường",
+      heading: "Các doanh nghiệp F&B đã làm việc",
       note:
-        "Các liên kết Google Maps giúp xem nhanh những cửa hàng/nhà hàng em nhắc đến trong kinh nghiệm làm việc.",
+        "Các liên kết Google Maps giúp xem nhanh những cửa hàng/nhà hàng được nhắc đến trong kinh nghiệm làm việc.",
     },
     venueContext: [
       {
@@ -131,7 +131,7 @@ export const portfolioContent = {
         logoSrc: "/assets/logos/gear-up.png",
         logoAlt: "Gear Up Cafe logo",
         note:
-          "Ở Gear Up Cafe, em làm quen với nhịp phục vụ của quán cà phê: pha đồ uống, đón khách và giữ không gian dễ chịu.",
+          "Ở Gear Up Cafe, làm quen với nhịp phục vụ của quán cà phê: pha đồ uống, đón khách và giữ không gian dễ chịu.",
         source: "Google Maps",
         url: venueLinks.gearUp,
       },
@@ -142,7 +142,7 @@ export const portfolioContent = {
         logoSrc: "/assets/logos/sweet-june.png",
         logoAlt: "Sweet June Crepes & Waffle logo",
         note:
-          "Ở Sweet June, em làm ở quầy crepes và waffles, chú ý tốc độ ra đơn, trình bày món và giao tiếp với khách.",
+          "Ở Sweet June, làm việc ở quầy crepes và waffles, chú ý tốc độ ra đơn, trình bày món và giao tiếp với khách.",
         source: "Google Maps",
         url: venueLinks.sweetJune,
       },
@@ -153,14 +153,14 @@ export const portfolioContent = {
         logoSrc: "/assets/logos/weijie.png",
         logoAlt: "Weijie Clay Oven BBQ logo",
         note:
-          "Ở Weijie Clay Oven BBQ, em phục vụ bàn, hỗ trợ khách khi gọi món và phối hợp với bếp để ca làm trôi chảy.",
+          "Ở Weijie Clay Oven BBQ, phục vụ bàn, hỗ trợ khách khi gọi món và phối hợp với bếp để ca làm trôi chảy.",
         source: "Google Maps",
         url: venueLinks.weijie,
       },
     ],
     contact: {
       eyebrow: "Liên hệ",
-      heading: "Em sẵn sàng trao đổi công việc F&B",
+      heading: "Sẵn sàng trao đổi công việc F&B, mong muốn tìm kiếm cơ hội cộng tác làm việc",
       body:
         "Em hiện ở Quận 7, TP.HCM. Em có thể làm các vị trí barista, nhân viên, phục vụ bàn hoặc chăm sóc khách hàng.",
       aria: "Thông tin liên hệ",
