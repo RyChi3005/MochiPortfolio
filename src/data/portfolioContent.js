@@ -190,26 +190,26 @@ export const portfolioContent = {
     hero: {
       eyebrow: "F&B Service Crew",
       lede:
-        "I have worked in a cafe, a dessert shop, and a BBQ restaurant. I am used to welcoming guests, preparing orders, keeping tables clean, and helping teammates during busy shifts.",
+        "Experienced working in cafes, dessert shops, and BBQ restaurants. Adept at welcoming guests, preparing orders, maintaining dining areas, and supporting the team during busy shifts.",
       actionsLabel: "Portfolio actions",
-      call: "Call me",
+      call: "Contact",
       cv: "CV PDF",
       alt: "Nguyễn Thị Huỳnh Chăm holding a green drink in a cafe setting",
       caption: "Positive energy, clean service, quick learning.",
     },
     profile: {
-      eyebrow: "About me",
-      heading: "I enjoy serving guests and learning quickly",
+      eyebrow: "Profile",
+      heading: "Delivering the best experience for guests",
       body:
-        "I am friendly, hard-working, and responsible. During a shift, I try to notice what guests need, handle my tasks properly, and work with the team so service runs smoothly.",
+        "Friendly, hard-working, and responsible. Dedicated to anticipating guest needs, executing tasks effectively, and coordinating with the team to ensure smooth service operations.",
     },
     capability: {
-      eyebrow: "How I work",
+      eyebrow: "Working style",
       heading: "Core strengths and service skills",
       strengthsHeading: "Strengths",
       valueHeading: "During service",
       value:
-        "I try to stay polite with guests, prepare orders neatly, keep an eye on tables, and support teammates when the shop gets busy.",
+        "Consistently maintaining a polite attitude with guests, preparing orders neatly, monitoring dining areas, and supporting teammates during busy periods.",
       skillsHeading: "Skills",
     },
     strengths: [
@@ -245,7 +245,7 @@ export const portfolioContent = {
         icon: "coffee",
         accent: "green",
         summary:
-          "I prepared coffee and other drinks, welcomed guests, kept my work area tidy, and helped teammates during service.",
+          "Prepared coffee and other beverages, welcomed guests, maintained a tidy workspace, and supported the team during service.",
         proof: "Drink preparation, guest welcoming, tidy counter",
       },
       {
@@ -255,7 +255,7 @@ export const portfolioContent = {
         icon: "cake",
         accent: "rose",
         summary:
-          "I prepared crepes, waffles, and dessert orders, paid attention to presentation, and handled counter orders for guests.",
+          "Prepared crepes, waffles, and dessert orders with a strong focus on presentation, and managed counter orders efficiently.",
         proof: "Dessert prep, order handling, product presentation",
       },
       {
@@ -265,7 +265,7 @@ export const portfolioContent = {
         icon: "flame",
         accent: "gold",
         summary:
-          "I served food and drinks, helped guests with menu choices and the grilling experience, and kept tables clean during the shift.",
+          "Served food and beverages, assisted guests with menu selections and the grilling experience, and maintained clean tables throughout the shift.",
         proof: "Table service, guest support, kitchen coordination",
       },
       {
@@ -275,15 +275,15 @@ export const portfolioContent = {
         icon: "users",
         accent: "ink",
         summary:
-          "I received guest questions and feedback, helped handle issues, recorded comments, and supported service staff when needed.",
+          "Received guest inquiries and feedback, facilitated issue resolution, recorded comments, and provided operational support to service staff as needed.",
         proof: "Customer care, feedback notes, shift support",
       },
     ],
     venuesIntro: {
-      eyebrow: "Places I worked",
-      heading: "A few F&B settings I have experienced",
+      eyebrow: "Work Environments",
+      heading: "F&B establishments previously worked at",
       note:
-        "These Google Maps links make it easier to view the shops and restaurants mentioned in my work experience.",
+        "These Google Maps links provide quick access to view the shops and restaurants mentioned in the work experience.",
     },
     venueContext: [
       {
@@ -293,7 +293,7 @@ export const portfolioContent = {
         logoSrc: "/assets/logos/gear-up.png",
         logoAlt: "Gear Up Cafe logo",
         note:
-          "At Gear Up Cafe, I got used to cafe service: preparing drinks, welcoming guests, and keeping the space comfortable.",
+          "Gained hands-on experience in cafe service operations, including beverage preparation, guest reception, and maintaining a comfortable atmosphere.",
         source: "Google Maps",
         url: venueLinks.gearUp,
       },
@@ -304,7 +304,7 @@ export const portfolioContent = {
         logoSrc: "/assets/logos/sweet-june.png",
         logoAlt: "Sweet June Crepes & Waffle logo",
         note:
-          "At Sweet June, I worked with crepes and waffles, focusing on order speed, product presentation, and guest communication.",
+          "Managed crepe and waffle preparation, emphasizing order efficiency, product presentation, and clear guest communication.",
         source: "Google Maps",
         url: venueLinks.sweetJune,
       },
@@ -315,16 +315,16 @@ export const portfolioContent = {
         logoSrc: "/assets/logos/weijie.png",
         logoAlt: "Weijie Clay Oven BBQ logo",
         note:
-          "At Weijie Clay Oven BBQ, I served tables, helped guests with orders, and coordinated with the kitchen during service.",
+          "Delivered table service, assisted guests with orders, and coordinated closely with the kitchen to ensure seamless operations.",
         source: "Google Maps",
         url: venueLinks.weijie,
       },
     ],
     contact: {
       eyebrow: "Contact",
-      heading: "I am open to F&B service opportunities",
+      heading: "Open to F&B service opportunities and eager to collaborate",
       body:
-        "I am based in District 7, Ho Chi Minh City. I can work as a barista, bakery staff, waitress, or customer service staff.",
+        "Currently based in District 7, Ho Chi Minh City. Available for roles including barista, bakery staff, waitress, or customer service representative.",
       aria: "Contact details",
     },
     openMaps: "Open on",

@@ -667,7 +667,107 @@ p {
   border: 2px solid var(--sage-400);
   flex: 0 0 10px;
   box-shadow: 0 0 0 3px var(--sage-100);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    width 240ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    height 240ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    flex 240ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-color 200ms,
+    background 200ms,
+    box-shadow 200ms;
+  overflow: hidden;
 }
+
+.timelineIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.4);
+  transition:
+    opacity 200ms 60ms,
+    transform 260ms cubic-bezier(0.34, 1.56, 0.64, 1) 60ms;
+}
+
+.timelineItem:hover .timelineDot {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border-color: var(--sage-600);
+  background: var(--sage-100);
+  box-shadow: 0 0 0 4px var(--sage-50), 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.timelineItem:hover .timelineIcon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.timelineIcon svg {
+  color: var(--sage-700);
+}
+
+/* ── Accent colors per F&B type ── */
+
+.timelineItem.accent-green:hover .timelineDot {
+  border-color: #4e7853;
+  background: #d8e8d9;
+  box-shadow: 0 0 0 4px #f0f5f0, 0 2px 8px rgba(78, 120, 83, 0.12);
+}
+.timelineItem.accent-green .timelineIcon svg { color: #3a6040; }
+
+.timelineItem.accent-rose:hover .timelineDot {
+  border-color: #b06070;
+  background: #f5dfe4;
+  box-shadow: 0 0 0 4px #fdf2f5, 0 2px 8px rgba(176, 96, 112, 0.12);
+}
+.timelineItem.accent-rose .timelineIcon svg { color: #9a4858; }
+
+.timelineItem.accent-gold:hover .timelineDot {
+  border-color: #b09040;
+  background: #f5ecd4;
+  box-shadow: 0 0 0 4px #fdf9f0, 0 2px 8px rgba(176, 144, 64, 0.12);
+}
+.timelineItem.accent-gold .timelineIcon svg { color: #8a7030; }
+
+.timelineItem.accent-ink:hover .timelineDot {
+  border-color: #5c5c54;
+  background: #e8e8e4;
+  box-shadow: 0 0 0 4px #f4f4f2, 0 2px 8px rgba(92, 92, 84, 0.12);
+}
+.timelineItem.accent-ink .timelineIcon svg { color: #3a3a34; }
+
+/* Dark theme accent overrides */
+[data-theme="dark"] .timelineItem.accent-green:hover .timelineDot {
+  border-color: #98bb9a;
+  background: #2c3a2d;
+  box-shadow: 0 0 0 4px #202a20, 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+[data-theme="dark"] .timelineItem.accent-green .timelineIcon svg { color: #b5d0ad; }
+
+[data-theme="dark"] .timelineItem.accent-rose:hover .timelineDot {
+  border-color: #d4909c;
+  background: #3a2428;
+  box-shadow: 0 0 0 4px #2a1a1e, 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+[data-theme="dark"] .timelineItem.accent-rose .timelineIcon svg { color: #e0a8b2; }
+
+[data-theme="dark"] .timelineItem.accent-gold:hover .timelineDot {
+  border-color: #d1b876;
+  background: #3a3420;
+  box-shadow: 0 0 0 4px #2a2618, 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+[data-theme="dark"] .timelineItem.accent-gold .timelineIcon svg { color: #e0cc8a; }
+
+[data-theme="dark"] .timelineItem.accent-ink:hover .timelineDot {
+  border-color: #9d9586;
+  background: #2a2a26;
+  box-shadow: 0 0 0 4px #22221e, 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+[data-theme="dark"] .timelineItem.accent-ink .timelineIcon svg { color: #cbc5b7; }
 
 .timelineTrack::after {
   content: "";
@@ -739,6 +839,7 @@ p {
   color: var(--sage-700);
   border: 1px solid var(--line);
   letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 /* ── VENUE SECTION ───────────────────────────────── */
@@ -794,6 +895,36 @@ p {
   background: var(--sage-50);
   border-bottom: 1px solid var(--line);
   overflow: hidden;
+  position: relative;
+}
+
+.venueIconBadge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.5);
+  transition:
+    opacity 220ms ease,
+    transform 280ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.venueIconBadge svg {
+  color: var(--sage-600);
+}
+
+.venueCard:hover .venueIconBadge {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .venueLogo {

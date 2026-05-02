@@ -1,3 +1,5 @@
+import { iconMap } from "./iconMap.js";
+
 export function VenueSection({ openMaps, venueContext, venuesIntro }) {
   return (
     <section className="venueBand" id="venues" aria-labelledby="venues-heading">
@@ -10,11 +12,17 @@ export function VenueSection({ openMaps, venueContext, venuesIntro }) {
 
         <div className="venueGrid">
           {venueContext.map((venue) => {
+            const Icon = venue.icon ? iconMap[venue.icon] : null;
             return (
               <article className="venueCard" key={venue.title}>
                 <div className="venueArt">
                   {venue.logoSrc && (
                     <img className="venueLogo" src={venue.logoSrc} alt={venue.logoAlt} />
+                  )}
+                  {Icon && (
+                    <span className="venueIconBadge" aria-hidden="true">
+                      <Icon size={18} strokeWidth={2} />
+                    </span>
                   )}
                 </div>
                 <div className="venueBody">
@@ -38,3 +46,4 @@ export function VenueSection({ openMaps, venueContext, venuesIntro }) {
     </section>
   );
 }
+
