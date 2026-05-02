@@ -1,4 +1,5 @@
 import { iconMap } from "./iconMap.js";
+import { TrendingUp } from "lucide-react";
 
 export function ExperienceSection({ experience, intro }) {
   return (
@@ -7,11 +8,15 @@ export function ExperienceSection({ experience, intro }) {
       <h2 className="mainHeading" id="exp-heading">{intro.heading}</h2>
 
       <div className="timeline">
-        {experience.map((job) => {
+        {experience.map((job, i) => {
           const Icon = job.icon ? iconMap[job.icon] : null;
+          const prev = experience[i - 1];
+          const isPromotion = prev && prev.place === job.place;
+          const isLast = i === experience.length - 1;
+
           return (
             <article
-              className={`timelineItem ${job.accent ? `accent-${job.accent}` : ""}`}
+              className={`timelineItem ${job.accent ? `accent-${job.accent}` : ""} ${isLast ? "timelineItem--last" : ""}`}
               key={`${job.place}-${job.role}`}
             >
               <div className="timelineTrack" aria-hidden="true">
@@ -24,7 +29,14 @@ export function ExperienceSection({ experience, intro }) {
                 </div>
               </div>
               <div className="timelineBody">
-                <h3 className="jobRole">{job.role}</h3>
+                <h3 className="jobRole">
+                  {isPromotion && (
+                    <span className="promotionIcon" title={intro.promotionLabel ?? "Promoted"}>
+                      <TrendingUp size={15} strokeWidth={2.2} />
+                    </span>
+                  )}
+                  {job.role}
+                </h3>
                 <div className="jobMeta">
                   <span className="jobPlace">{job.place}</span>
                   <span className="jobPeriod">{job.period}</span>
@@ -43,3 +55,7 @@ export function ExperienceSection({ experience, intro }) {
     </section>
   );
 }
+
+
+
+

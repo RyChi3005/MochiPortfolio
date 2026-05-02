@@ -37,7 +37,7 @@ export function Hero({ language, languages, onLanguageChange, onThemeToggle, t, 
           <hr className="cvDivider" />
           <p className="cvSummary">{t.hero.lede}</p>
           <div className="cvActions" aria-label={t.hero.actionsLabel}>
-            <a className="btn primary" href="tel:+84816830852">
+            <a className="btn primary" href={t.contact.phoneHref}>
               <Phone aria-hidden="true" />
               {t.hero.call}
             </a>

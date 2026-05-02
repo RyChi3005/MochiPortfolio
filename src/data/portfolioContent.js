@@ -32,7 +32,7 @@ export const portfolioContent = {
     hero: {
       eyebrow: "Nhân viên F&B",
       lede:
-        "Đã làm việc tại quán cà phê, tiệm bánh và nhà hàng BBQ. Quen với việc phục vụ khách, chuẩn bị món, và hỗ trợ đồng đội trong ca làm việc.",
+        "Có kinh nghiệm làm việc tại các mô hình cà phê, tiệm bánh và nhà hàng BBQ. Thành thạo nghiệp vụ đón tiếp khách hàng, chuẩn bị món, duy trì không gian phục vụ và hỗ trợ đồng nghiệp trong các ca làm việc bận rộn.",
       actionsLabel: "Hành động portfolio",
       call: "Liên hệ",
       cv: "CV PDF",
@@ -43,7 +43,7 @@ export const portfolioContent = {
       eyebrow: "Giới thiệu",
       heading: "Mang lại trải nghiệm tốt nhất cho khách hàng",
       body:
-        "Thân thiện, chịu khó và có trách nhiệm. Khi làm việc, ghi nhớ cố gắng quan sát khách cần gì, làm đúng phần việc của mình và phối hợp với mọi người để ca làm việc diễn ra suôn sẻ.",
+        "Thân thiện, chăm chỉ và có tinh thần trách nhiệm cao. Luôn chủ động nắm bắt nhu cầu của khách hàng, hoàn thành tốt công việc được giao và phối hợp nhịp nhàng với tập thể để đảm bảo chất lượng dịch vụ tốt nhất.",
     },
     capability: {
       eyebrow: "Cách làm việc",
@@ -51,7 +51,7 @@ export const portfolioContent = {
       strengthsHeading: "Điểm mạnh",
       valueHeading: "Trong ca làm",
       value:
-        "Luôn cố gắng giữ thái độ dễ chịu với khách, chế biến món gọn gàng, để ý bàn ghế và hỗ trợ đồng đội.",
+        "Luôn duy trì thái độ niềm nở và chuyên nghiệp với khách hàng, chuẩn bị món cẩn thận, chú ý đến không gian phục vụ và sẵn sàng hỗ trợ đồng nghiệp khi quán đông khách.",
       skillsHeading: "Kỹ năng",
     },
     strengths: [
@@ -78,6 +78,7 @@ export const portfolioContent = {
     experienceIntro: {
       eyebrow: "Kinh nghiệm làm việc",
       heading: "F&B",
+      promotionLabel: "Thăng tiến nội bộ",
     },
     experience: [
       {
@@ -87,7 +88,7 @@ export const portfolioContent = {
         icon: "coffee",
         accent: "green",
         summary:
-          "Thực hiện pha chế món, đón khách, giữ khu vực làm việc gọn gàng và hỗ trợ đồng đội trong lúc phục vụ.",
+          "Thực hiện pha chế thức uống, đón tiếp khách hàng, duy trì khu vực làm việc ngăn nắp và chủ động hỗ trợ đồng nghiệp trong suốt ca trực.",
         proof: "Pha chế, đón khách, giữ quầy gọn gàng",
       },
       {
@@ -97,7 +98,7 @@ export const portfolioContent = {
         icon: "cake",
         accent: "rose",
         summary:
-          "Chuẩn bị đơn tráng miệng, chú ý phần trình bày và xử lý đơn cho khách tại quầy.",
+          "Chuẩn bị các món bánh và tráng miệng với sự chú trọng về hình thức trình bày, đồng thời quản lý hiệu quả các đơn hàng tại quầy.",
         proof: "Chuẩn bị món, ra đơn, trình bày sản phẩm",
       },
       {
@@ -107,8 +108,8 @@ export const portfolioContent = {
         icon: "flame",
         accent: "gold",
         summary:
-          "Phục vụ món nướng, hỗ trợ khách chọn món và trải nghiệm nướng, đồng thời giữ bàn ăn sạch trong suốt ca.",
-        proof: "Phục vụ bàn, hỗ trợ khách, phối hợp bếp",
+          "Phục vụ đồ ăn thức uống và hỗ trợ khách hàng trải nghiệm nướng BBQ. Tích cực ghi nhận phản hồi tại bàn và xử lý khéo léo các tình huống phát sinh, tạo tiền đề để chuyển tiếp sang mảng chăm sóc khách hàng.",
+        proof: "Phục vụ bàn, hỗ trợ khách, xử lý tình huống",
       },
       {
         place: "Weijie Clay Oven BBQ",
@@ -117,8 +118,8 @@ export const portfolioContent = {
         icon: "users",
         accent: "ink",
         summary:
-          "Tiếp nhận thắc mắc của khách, hỗ trợ xử lý phản hồi, ghi nhận ý kiến và hỗ trợ nhân viên phục vụ khi cần.",
-        proof: "Chăm sóc khách, ghi nhận phản hồi, hỗ trợ vận hành",
+          "Phát triển từ vị trí phục vụ, chính thức phụ trách tiếp nhận và giải quyết khiếu nại của khách hàng. Phân tích ý kiến đóng góp để tối ưu quy trình phục vụ và hỗ trợ nhân viên khi cần trong các ca đông khách.",
+        proof: "Chăm sóc khách, tối ưu quy trình, hỗ trợ nhân viên",
       },
     ],
     venuesIntro: {
@@ -135,7 +136,7 @@ export const portfolioContent = {
         logoSrc: "/assets/logos/gear-up.png",
         logoAlt: "Gear Up Cafe logo",
         note:
-          "Ở Gear Up Cafe, làm quen với nhịp phục vụ của quán cà phê: pha đồ uống, đón khách và giữ không gian dễ chịu.",
+          "Tích lũy kinh nghiệm thực tế trong vận hành quán cà phê, bao gồm pha chế thức uống, đón tiếp khách hàng và duy trì không gian thư giãn thoải mái.",
         source: "Google Maps",
         url: venueLinks.gearUp,
       },
@@ -146,7 +147,7 @@ export const portfolioContent = {
         logoSrc: "/assets/logos/sweet-june.png",
         logoAlt: "Sweet June Crepes & Waffle logo",
         note:
-          "Ở Sweet June, làm việc ở quầy crepes và waffles, chú ý tốc độ ra đơn, trình bày món và giao tiếp với khách.",
+          "Phụ trách chuẩn bị bánh crepe và waffle, đảm bảo tốc độ ra món, tính thẩm mỹ của sản phẩm và duy trì giao tiếp tốt với khách hàng.",
         source: "Google Maps",
         url: venueLinks.sweetJune,
       },
@@ -157,17 +158,20 @@ export const portfolioContent = {
         logoSrc: "/assets/logos/weijie.png",
         logoAlt: "Weijie Clay Oven BBQ logo",
         note:
-          "Ở Weijie Clay Oven BBQ, phục vụ bàn, hỗ trợ khách khi gọi món và phối hợp với bếp để ca làm trôi chảy.",
+          "Thực hiện nghiệp vụ phục vụ bàn, tư vấn món ăn cho khách và phối hợp chặt chẽ với bộ phận bếp để đảm bảo ca làm việc diễn ra suôn sẻ.",
         source: "Google Maps",
         url: venueLinks.weijie,
       },
     ],
     contact: {
       eyebrow: "Liên hệ",
-      heading: "Sẵn sàng trao đổi công việc F&B, mong muốn tìm kiếm cơ hội cộng tác làm việc",
+      heading: "Sẵn sàng đón nhận các cơ hội làm việc trong ngành F&B",
       body:
-        "Em hiện ở Quận 7, TP.HCM. Em có thể làm các vị trí barista, nhân viên, phục vụ bàn hoặc chăm sóc khách hàng.",
+        "Có khả năng đảm nhiệm tốt các vị trí như Barista, nhân viên phục vụ, hoặc chuyên viên chăm sóc khách hàng.",
       aria: "Thông tin liên hệ",
+      phoneDisplay: "0816 830 852",
+      phoneHref: "tel:0816830852",
+      addressDisplay: "Quận 7, TP.HCM",
     },
     openMaps: "Mở trên",
   },
@@ -236,6 +240,7 @@ export const portfolioContent = {
     experienceIntro: {
       eyebrow: "Work Experience",
       heading: "Cafe, dessert, BBQ, and customer service",
+      promotionLabel: "Internal promotion",
     },
     experience: [
       {
@@ -265,8 +270,8 @@ export const portfolioContent = {
         icon: "flame",
         accent: "gold",
         summary:
-          "Served food and beverages, assisted guests with menu selections and the grilling experience, and maintained clean tables throughout the shift.",
-        proof: "Table service, guest support, kitchen coordination",
+          "Served food and assisted guests with the BBQ grilling experience. Actively gathered table-side feedback and effectively handled ad-hoc situations, paving the way for a transition into customer service.",
+        proof: "Table service, guest support, issue resolution",
       },
       {
         place: "Weijie Clay Oven BBQ",
@@ -275,8 +280,8 @@ export const portfolioContent = {
         icon: "users",
         accent: "ink",
         summary:
-          "Received guest inquiries and feedback, facilitated issue resolution, recorded comments, and provided operational support to service staff as needed.",
-        proof: "Customer care, feedback notes, shift support",
+          "Progressed from the waitress role to officially manage and resolve customer complaints. Analyzed guest feedback to optimize service workflows and supported the team during busy shifts.",
+        proof: "Customer care, workflow optimization, team support",
       },
     ],
     venuesIntro: {
@@ -324,8 +329,11 @@ export const portfolioContent = {
       eyebrow: "Contact",
       heading: "Open to F&B service opportunities and eager to collaborate",
       body:
-        "Currently based in District 7, Ho Chi Minh City. Available for roles including barista, bakery staff, waitress, or customer service representative.",
+        "Available for roles including barista, bakery staff, waitress, or customer service representative.",
       aria: "Contact details",
+      phoneDisplay: "(+84) 816 830 852",
+      phoneHref: "tel:0816830852",
+      addressDisplay: "District 7, Ho Chi Minh City",
     },
     openMaps: "Open on",
   },

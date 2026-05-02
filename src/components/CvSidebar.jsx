@@ -19,7 +19,7 @@ export function CvSidebar({ t }) {
           <li>
             <MapPin aria-hidden="true" />
             <a href={contactMapUrl} target="_blank" rel="noreferrer">
-              Quận 7, TP.HCM
+              {t.contact.addressDisplay}
             </a>
           </li>
           <li>
@@ -28,7 +28,7 @@ export function CvSidebar({ t }) {
           </li>
           <li>
             <Phone aria-hidden="true" />
-            <a href="tel:+84816830852">(+84) 816 830 852</a>
+            <a href={t.contact.phoneHref}>{t.contact.phoneDisplay}</a>
           </li>
         </ul>
       </div>

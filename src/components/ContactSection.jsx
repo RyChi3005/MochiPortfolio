@@ -14,15 +14,15 @@ export function ContactSection({ contact }) {
         <div className="contactLinks" aria-label={contact.aria}>
           <a className="contactLink" href={contactMapUrl} target="_blank" rel="noreferrer">
             <MapPin aria-hidden="true" />
-            Quận 7, TP.HCM
+            {contact.addressDisplay}
           </a>
           <a className="contactLink" href="mailto:nguyencham870@gmail.com">
             <Mail aria-hidden="true" />
             nguyencham870@gmail.com
           </a>
-          <a className="contactLink" href="tel:+84816830852">
+          <a className="contactLink" href={contact.phoneHref}>
             <Phone aria-hidden="true" />
-            (+84) 816 830 852
+            {contact.phoneDisplay}
           </a>
         </div>
       </div>
