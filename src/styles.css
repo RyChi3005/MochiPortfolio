@@ -8,6 +8,8 @@
   --bg: #f4f0e6;
   --paper: #fefcf7;
   --sidebar-bg: #f2f5f1;
+  --plain-surface: #ffffff;
+  --logo-surface: #fefcf7;
 
   --sage-50: #f0f5f0;
   --sage-100: #d8e8d9;
@@ -27,8 +29,90 @@
   --line: rgba(58, 96, 64, 0.14);
   --line-strong: rgba(58, 96, 64, 0.24);
 
+  --nav-bg: #2b4d31;
+  --nav-text: #ffffff;
+  --nav-link: rgba(255, 255, 255, 0.72);
+  --nav-control-bg: rgba(255, 255, 255, 0.07);
+  --nav-control-border: rgba(255, 255, 255, 0.22);
+  --nav-control-text: rgba(255, 255, 255, 0.72);
+  --nav-active-bg: #fefcf7;
+  --nav-active-text: #2b4d31;
+
+  --button-primary-bg: #3a6040;
+  --button-primary-hover: #2b4d31;
+  --button-primary-text: #ffffff;
+  --button-outline-text: #3a6040;
+  --button-outline-border: #7aa07e;
+  --button-outline-hover: #f0f5f0;
+
+  --portrait-border: #ffffff;
+  --timeline-dot-bg: #ffffff;
+  --venue-hover-shadow: 0 8px 32px rgba(43, 77, 49, 0.13);
+  --contact-bg: #192e1c;
+  --contact-text: #ffffff;
+  --contact-muted: rgba(255, 255, 255, 0.65);
+  --contact-card-bg: rgba(255, 255, 255, 0.07);
+  --contact-card-hover: rgba(255, 255, 255, 0.13);
+  --contact-card-border: rgba(255, 255, 255, 0.11);
+
   --shadow-card: 0 2px 8px rgba(43, 77, 49, 0.07), 0 10px 48px rgba(43, 77, 49, 0.09);
   --shadow-portrait: 0 10px 40px rgba(43, 77, 49, 0.22);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #10130f;
+  --paper: #171b16;
+  --sidebar-bg: #1d241c;
+  --plain-surface: #1a2019;
+  --logo-surface: #eee9dc;
+
+  --sage-50: #202a20;
+  --sage-100: #2c3a2d;
+  --sage-200: #6f8f72;
+  --sage-400: #98bb9a;
+  --sage-600: #b5d0ad;
+  --sage-700: #c4dcb5;
+  --sage-800: #e3eed5;
+  --sage-900: #0b100b;
+
+  --champagne: #d1b876;
+  --champagne-light: #4a402e;
+
+  --ink: #f2efe6;
+  --muted: #cbc5b7;
+  --subtle: #9d9586;
+  --line: rgba(221, 202, 151, 0.16);
+  --line-strong: rgba(181, 208, 173, 0.28);
+
+  --nav-bg: #0c120c;
+  --nav-text: #f8f5eb;
+  --nav-link: rgba(248, 245, 235, 0.68);
+  --nav-control-bg: rgba(248, 245, 235, 0.07);
+  --nav-control-border: rgba(248, 245, 235, 0.18);
+  --nav-control-text: rgba(248, 245, 235, 0.74);
+  --nav-active-bg: #d1b876;
+  --nav-active-text: #11160f;
+
+  --button-primary-bg: #c4dcb5;
+  --button-primary-hover: #d8e8c9;
+  --button-primary-text: #10150f;
+  --button-outline-text: #d1b876;
+  --button-outline-border: rgba(209, 184, 118, 0.64);
+  --button-outline-hover: rgba(209, 184, 118, 0.12);
+
+  --portrait-border: #313a2e;
+  --timeline-dot-bg: #171b16;
+  --venue-hover-shadow: 0 12px 34px rgba(0, 0, 0, 0.26);
+  --contact-bg: #0b100b;
+  --contact-text: #f8f5eb;
+  --contact-muted: rgba(248, 245, 235, 0.68);
+  --contact-card-bg: rgba(248, 245, 235, 0.07);
+  --contact-card-hover: rgba(248, 245, 235, 0.12);
+  --contact-card-border: rgba(248, 245, 235, 0.12);
+
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.26), 0 18px 60px rgba(0, 0, 0, 0.32);
+  --shadow-portrait: 0 12px 38px rgba(0, 0, 0, 0.34);
 }
 
 * {
@@ -46,6 +130,10 @@ body {
   font-family: var(--font-body);
   font-size: 15px;
   line-height: 1.7;
+  min-width: 320px;
+  transition:
+    background 180ms,
+    color 180ms;
 }
 
 button,
@@ -69,8 +157,8 @@ p {
 /* ── NAV ──────────────────────────────────────────── */
 
 .siteNav {
-  background: var(--sage-800);
-  color: white;
+  background: var(--nav-bg);
+  color: var(--nav-text);
   padding: 0 20px;
 }
 
@@ -93,7 +181,7 @@ p {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-decoration: none;
-  color: white;
+  color: var(--nav-text);
   flex-shrink: 0;
 }
 
@@ -116,7 +204,7 @@ p {
 }
 
 .navLinks a {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--nav-link);
   font-size: 0.83rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -125,7 +213,40 @@ p {
 }
 
 .navLinks a:hover {
-  color: white;
+  color: var(--nav-text);
+}
+
+.themeToggle {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--nav-control-border);
+  border-radius: 6px;
+  background: var(--nav-control-bg);
+  color: var(--nav-control-text);
+  cursor: pointer;
+  flex: 0 0 36px;
+  transition:
+    background 140ms,
+    color 140ms,
+    border-color 140ms;
+}
+
+.themeToggle:hover {
+  color: var(--nav-text);
+  border-color: var(--nav-text);
+}
+
+.themeToggle svg {
+  width: 17px;
+  height: 17px;
+}
+
+.themeToggle:focus-visible {
+  outline: 2px solid var(--champagne);
+  outline-offset: 2px;
 }
 
 /* ── LANGUAGE TOGGLE ─────────────────────────────── */
@@ -134,9 +255,9 @@ p {
   display: inline-grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  border: 1px solid var(--nav-control-border);
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.07);
+  background: var(--nav-control-bg);
   min-width: 82px;
 }
 
@@ -145,7 +266,7 @@ p {
   border: 0;
   border-radius: 4px;
   background: transparent;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--nav-control-text);
   cursor: pointer;
   font-size: 0.76rem;
   font-weight: 700;
@@ -156,8 +277,8 @@ p {
 }
 
 .languageToggle button.active {
-  background: var(--paper);
-  color: var(--sage-800);
+  background: var(--nav-active-bg);
+  color: var(--nav-active-text);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.14);
 }
 
@@ -249,24 +370,24 @@ p {
 }
 
 .btn.primary {
-  background: var(--sage-700);
-  color: white;
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
   box-shadow: 0 4px 16px rgba(43, 77, 49, 0.22);
 }
 
 .btn.primary:hover {
-  background: var(--sage-800);
+  background: var(--button-primary-hover);
   box-shadow: 0 6px 22px rgba(43, 77, 49, 0.30);
 }
 
 .btn.outline {
   background: transparent;
-  color: var(--sage-700);
-  border: 1px solid var(--sage-400);
+  color: var(--button-outline-text);
+  border: 1px solid var(--button-outline-border);
 }
 
 .btn.outline:hover {
-  background: var(--sage-50);
+  background: var(--button-outline-hover);
 }
 
 /* ── CV BODY ─────────────────────────────────────── */
@@ -335,7 +456,7 @@ p {
   border-radius: 50%;
   object-fit: cover;
   object-position: top center;
-  border: 4px solid white;
+  border: 4px solid var(--portrait-border);
   box-shadow: var(--shadow-portrait);
   display: block;
 }
@@ -377,6 +498,7 @@ p {
 .sideContactList a {
   text-decoration: none;
   color: var(--muted);
+  overflow-wrap: anywhere;
   transition: color 140ms;
 }
 
@@ -400,7 +522,7 @@ p {
   font-size: 0.76rem;
   font-family: var(--font-body);
   line-height: 1.5;
-  border: 1px solid rgba(58, 96, 64, 0.12);
+  border: 1px solid var(--line);
 }
 
 /* strengths */
@@ -541,7 +663,7 @@ p {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: white;
+  background: var(--timeline-dot-bg);
   border: 2px solid var(--sage-400);
   flex: 0 0 10px;
   box-shadow: 0 0 0 3px var(--sage-100);
@@ -653,14 +775,14 @@ p {
   border: 1px solid var(--line);
   border-radius: 3px;
   overflow: hidden;
-  background: white;
+  background: var(--plain-surface);
   transition:
     box-shadow 180ms,
     transform 180ms;
 }
 
 .venueCard:hover {
-  box-shadow: 0 8px 32px rgba(43, 77, 49, 0.13);
+  box-shadow: var(--venue-hover-shadow);
   transform: translateY(-2px);
 }
 
@@ -679,7 +801,7 @@ p {
   height: 84px;
   padding: 14px;
   object-fit: contain;
-  background: var(--paper);
+  background: var(--logo-surface);
 }
 
 .venueBody {
@@ -727,14 +849,14 @@ p {
 
 .venueLink:hover {
   color: var(--sage-800);
-  border-color: var(--sage-500);
+  border-color: var(--sage-600);
 }
 
 /* ── CONTACT BAND ────────────────────────────────── */
 
 .contactBand {
-  background: var(--sage-900);
-  color: white;
+  background: var(--contact-bg);
+  color: var(--contact-text);
   padding: 68px 20px;
 }
 
@@ -760,14 +882,14 @@ p {
   font-family: var(--font-serif);
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 600;
-  color: white;
+  color: var(--contact-text);
   margin: 0 0 12px;
   line-height: 1.22;
 }
 
 .contactBody {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--contact-muted);
   line-height: 1.78;
 }
 
@@ -783,17 +905,18 @@ p {
   gap: 12px;
   padding: 14px 16px;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.11);
+  background: var(--contact-card-bg);
+  border: 1px solid var(--contact-card-border);
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--contact-text);
   font-size: 0.87rem;
   line-height: 1.45;
+  overflow-wrap: anywhere;
   transition: background 140ms;
 }
 
 .contactLink:hover {
-  background: rgba(255, 255, 255, 0.13);
+  background: var(--contact-card-hover);
 }
 
 .contactLink svg {
@@ -817,6 +940,7 @@ p {
   .navTools {
     width: 100%;
     justify-content: space-between;
+    gap: 14px;
   }
 
   .cvCard {
@@ -871,8 +995,55 @@ p {
 }
 
 @media (max-width: 600px) {
+  .siteNav {
+    padding: 0 16px;
+  }
+
+  .navInner {
+    align-items: stretch;
+  }
+
+  .navTools {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navLinks {
+    order: 2;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .navLinks a {
+    font-size: 0.74rem;
+  }
+
+  .themeToggle {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+  }
+
+  .languageToggle {
+    min-width: 78px;
+  }
+
   .cvHeader {
-    padding: 44px 20px 38px;
+    padding: 42px 16px 38px;
+  }
+
+  .cvName {
+    font-size: clamp(2.45rem, 14vw, 3.2rem);
+  }
+
+  .cvTitle {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+  }
+
+  .cvWrap {
+    padding: 30px 12px 48px;
   }
 
   .cvMain {
@@ -898,6 +1069,11 @@ p {
 
   .venueGrid {
     grid-template-columns: 1fr;
+  }
+
+  .venueBand,
+  .contactBand {
+    padding: 48px 16px;
   }
 
   .cvActions {

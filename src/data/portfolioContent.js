@@ -1,7 +1,7 @@
 export const availableLanguages = ["vi", "en"];
 
 export const contactMapUrl =
-  "https://maps.google.com/?q=18%2F37%2F10A%20B%E1%BA%BFn%20Ngh%C3%A9%2C%20T%C3%A2n%20Thu%E1%BA%ADn%20%C4%90%C3%B4ng%2C%20Qu%E1%BA%ADn%207%2C%20TP.HCM";
+  "https://maps.google.com/?q=Qu%E1%BA%ADn%207%2C%20TP.HCM";
 
 const venueLinks = {
   gearUp:
@@ -25,6 +25,10 @@ export const portfolioContent = {
       contact: "Liên hệ",
     },
     toggleLabel: "Chọn ngôn ngữ",
+    themeToggle: {
+      dark: "Chuyển sang giao diện tối",
+      light: "Chuyển sang giao diện sáng",
+    },
     hero: {
       eyebrow: "Nhân viên F&B",
       lede:
@@ -179,6 +183,10 @@ export const portfolioContent = {
       contact: "Contact",
     },
     toggleLabel: "Choose language",
+    themeToggle: {
+      dark: "Switch to dark theme",
+      light: "Switch to light theme",
+    },
     hero: {
       eyebrow: "F&B Service Crew",
       lede:

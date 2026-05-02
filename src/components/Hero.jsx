@@ -1,7 +1,8 @@
 import { Download, Phone, Sparkles } from "lucide-react";
 import { LanguageToggle } from "./LanguageToggle.jsx";
+import { ThemeToggle } from "./ThemeToggle.jsx";
 
-export function Hero({ language, languages, onLanguageChange, t }) {
+export function Hero({ language, languages, onLanguageChange, onThemeToggle, t, theme }) {
   return (
     <>
       <nav className="siteNav" aria-label={t.navLabel}>
@@ -16,6 +17,7 @@ export function Hero({ language, languages, onLanguageChange, t }) {
               <a href="#venues">{t.nav.venues}</a>
               <a href="#contact">{t.nav.contact}</a>
             </div>
+            <ThemeToggle labels={t.themeToggle} onToggle={onThemeToggle} theme={theme} />
             <LanguageToggle
               language={language}
               label={t.toggleLabel}

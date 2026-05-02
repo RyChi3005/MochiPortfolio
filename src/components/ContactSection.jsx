@@ -14,7 +14,7 @@ export function ContactSection({ contact }) {
         <div className="contactLinks" aria-label={contact.aria}>
           <a className="contactLink" href={contactMapUrl} target="_blank" rel="noreferrer">
             <MapPin aria-hidden="true" />
-            18/37/10A Bến Nghé, Tân Thuận Đông, Quận 7, TP.HCM
+            Quận 7, TP.HCM
           </a>
           <a className="contactLink" href="mailto:nguyencham870@gmail.com">
             <Mail aria-hidden="true" />
