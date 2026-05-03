@@ -114,7 +114,7 @@ export const portfolioContent = {
       {
         place: "Weijie Clay Oven BBQ",
         role: "Quản lý chăm sóc khách hàng",
-        period: "Tháng 12/2025 - Tháng 05/2026",
+        period: "Tháng 12/2025 - Tháng 04/2026",
         icon: "users",
         accent: "ink",
         summary:
@@ -276,7 +276,7 @@ export const portfolioContent = {
       {
         place: "Weijie Clay Oven BBQ",
         role: "Customer Service Manager",
-        period: "December 2025 - May 2026",
+        period: "December 2025 - April 2026",
         icon: "users",
         accent: "ink",
         summary:
